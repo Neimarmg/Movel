@@ -19,29 +19,28 @@ html {
     text-rendering: optimizeLegibility; /*otimiza a renderização da fonte para letura, tendo uma melhor qualidade*/
 }
 
- 
- /*Configurando minha linha do sistema de grid*/
+/*Configurando minha linha do sistema de grid*/
 .row {
     max-width: 1140px; /*Define o tamanho máximo da linha*/
     margin: 0 auto 0 auto; /*Define que o container vai ficar centralizado*/
     /*margin: 0 auto; maneira alternativa para a linha de cima*/
  }
 
-
  header {
-    background-image: url(img/nome_img_hero.jpg);
-}
-
-header {
-    background-image: url(img/nome_img_hero.jpg);
-    height: 100vh;
-}
-
-header {
-    background-image: url("img/hero-header-paypal.png");
+    background-image: linear-gradient(rgba(20, 0, 0, 0.45), rgba(26, 0, 0, 0.16)), url(img/Prato8.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
+
+}
+
+h1 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 240%; /*o tamanho de fonte padrão está definido na regra de css do elemento html como 20px*/
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 .hero-text-box {
@@ -51,11 +50,156 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+h1{
+    margin-top: 0;
+    color: #fff;
+    font-size: 240%; /*o tamanho de fonte padrão está definido na regra de css do elemento html como 20px*/
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
 
 
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/nome_img_hero.jpg); /*explore outras cores e transparências*/
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px; /*Ajustando espaçamento*/
+    color: #fff;
+    font-size: 240%; 
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-weight: 300; 
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+}
+
+
+.btn-full{
+    background-color: #e1b12c;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+.btn-ghost {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+}
+
+.btn-full:link,
+.btn-full:visited  {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited  {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.btn-full:link,
+.btn-full:visited  {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px; /*espaçamento entre os btões*/
+}
+
+btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s; /*a transição da cor do fundo, da borda e da fonte deve demorar 0.2 segundos*/
+}
+
+
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px; /*colocar um espaçamento acima da logo para baixar ela*/
+}
+
+.main-nav {
+    float: right;
+    list-style: none; /*Se livra dos bullets - bolinhas pretas - marcadores*/
+    margin-top: 35px; /*colocar um espaçamento acima da lista para baixar ela*/
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px; /*espaçamento entre os items da lista*/
+}
+
+.main-nav li a {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
 }
