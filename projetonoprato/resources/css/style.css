@@ -259,3 +259,104 @@ h2:after {
     margin: 0 auto; /*Centralizar*/
     margin-top: 30px;
 }
+
+.long-copy {
+    line-height:145%;
+    width: 70%; /*ocupa 70%, sobra 30%*/
+    margin-left: 15%; /*15% para cada lado*/
+}
+
+.box {
+    padding: 1%; /*dá um pequeno espaçamento entre o conteúdo e o container.*/
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+.images-showcase {
+    list-style: none; /*Retira marcadores*/
+    width: 100%; /*a lista agora ocupa toda largura da tela*/
+}
+
+.images-showcase {
+    list-style: none; /*Retira marcadores*/
+    width: 100%; /*a lista agora ocupa toda largura da tela*/
+}
+
+
+
+
+
+photo {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+.photo img {
+    width: 100%;
+    height: auto; /*para não desfigurar a imagem*/
+}
+
+.section-photos {
+    padding: 0;
+}
+
+.photo img {
+    width: 100%;
+    height: auto; /*para não desfigurar a imagem*/
+    transform: scale(1.15); /*imagem aumentada em 15%*/
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.photo img:hover {
+    transform: scale(1.03); /*escala da imagem com valor padrão*/
+}
+
+
+photo img {
+    width: 100%;
+    height: auto; /*para não desfigurar a imagem*/
+    transform: scale(1.15); /*imagem aumentada em 15%*/
+    transition: transform 0.5s; /*Adiciona um período de transição quando alterado houver alteração da propriedade transform*/
+}
+
+
+.photo img {
+    opacity: 0.7; /*deixa a imagem um pouco transparente*/
+    width: 100%;
+    height: auto; /*para não desfigurar a imagem*/
+    transform: scale(1.15); /*imagem aumentada em 15%*/
+    transition: transform 0.5s; /*Adiciona um período de transição quando alterado a propriedade transform*/
+}
+
+.photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000; /*Cor de fundo - preto*/
+}
+
+.photo img:hover {
+    opacity:1;
+    transform: scale(1.03); /*escala da imagem com valor padrão*/
+}
+
+
