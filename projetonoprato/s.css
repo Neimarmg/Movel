@@ -1,0 +1,13 @@
+
+
+@media(max-width:450px){
+    body{background-color: goldenrod;
+    }
+
+}
+
+@media(min-width:451px) and (max-width:700px){
+    body{background-color: green}
+     
+}
+

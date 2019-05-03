@@ -298,6 +298,10 @@ h2:after {
 
 
 
+/*--------------------------------------------------------------------------------------
+Bloco de imagens*/
+
+
 photo {
     width: 100%;
     margin: 0;
@@ -359,4 +363,142 @@ photo img {
     transform: scale(1.03); /*escala da imagem com valor padrão*/
 }
 
+.photo img {
+    opacity: 0.7; /*deixa a imagem um pouco transparente*/
+    width: 100%;
+    height: auto; /*para não desfigurar a imagem*/
+    transform: scale(1.15); /*imagem aumentada em 15%*/
+    transition: transform 0.5s, opacity 0.5s; /*Adiciona um período de transição quando houver alteração na propriedade transform ou opacity*/
+}
 
+
+/*---------------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------- */
+/* Seção Lista de Passos (Section Steps) */
+/* ----------------------------------------------- */
+
+/*Definindo cor de fundo para essa seção*/
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+/*Regra para ambos os boxes/containers*/
+.steps-box {
+    margin-top: 30px; /*Margem entre ambos os boxes e o h2*/
+}
+
+/*Regra para selecionar apenas o primeiro box/container, neste caso será o da esquerda*/
+/*Nota: First significa Primeiro*/
+.steps-box:first-child {
+    text-align: right; /*textos ou conteúdos do tipo inline (ex. img) alinhados à direita*/
+    padding-right: 3%; /*usamos porcentagem para ser responsivo*/
+}
+
+/*Regra para selecionar apenas o último box/container, neste caso será o da direita*/
+/*Nota: Last significa Último*/
+.steps-box:last-child {
+    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
+}
+
+/*Regra para selecionar apenas o último box/container, neste caso será o da direita*/
+/*Nota: Last significa Último*/
+.steps-box:last-child {
+    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
+}
+
+.step {
+    margin-bottom: 50px;
+    color:#e67e22;
+    font-weight: bolder;
+    
+}
+
+/*Vamos criar uma regra para o elemento div dentro da classe step*/
+.step div {
+    color: #e67e22; /*Define cor da fonte*/
+    border: 2px solid #e67e22; /*define uma borda laranja*/
+    display: inline-block;/*para permitir containers lado a lado*/
+}
+
+
+/*arredondarmos as bordas, definir altura e largura do container.*/
+.step div {
+    color: #e67e22; /*Define cor da fonte*/
+    border: 2px solid #e67e22; /*define uma borda laranja*/
+    display: inline-block;/*para permitir containers lado a lado*/
+    border-radius: 50%; /*Arredonda as bordas*/
+    height: 55px;/*Define altura*/
+    width: 55px;/*Mesmo valor da altura, afinal queremos um circulo*/
+}
+
+
+/* Número dentro do círculo não está alinhado. Vamos fazer isso agora.*/
+.step div {
+    color: #e67e22; /*Define cor da fonte*/
+    border: 2px solid #e67e22; /*define uma borda laranja*/
+    display: inline-block;/*para permitir containers lado a lado*/
+    border-radius: 50%; /*Arredonda as bordas*/
+    height: 55px;/*Define altura*/
+    width: 55px;/*Mesmo valor da altura, afinal queremos um circulo*/
+    /*Ajustando o texto interno*/
+    text-align: center;/*Texto centralizado na horizontal, não na vertical*/
+    padding: 5px;/*espaço entre texto e borda do container*/
+    float: left;
+    font-size: 150%;
+    margin-right: 30px;/*espaço entre essa div e o paragráfo - talvez varie de acordo com o tamanho dos paragráfos*/
+}
+
+
+/*Deletar essa regra*/
+.steps-box {
+}
+
+.steps-box:first-child {
+    margin-top: 30px;
+    text-align: right; /*textos ou conteúdos do tipo inline (ex. img) alinhados à direita*/
+    padding-right: 3%; /*usamos porcentagem para ser responsivo*/
+}
+
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%; /*usamos porcentagem para ser responsivo*/
+    margin-top: 70px;
+}
+
+.btn-app img {
+    height:50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.app{
+    width: 10%;
+    border-radius: 10%; /*Arredonda as bordas*/
+   
+    border: 2px; 
+
+}
+
+
+.clearfix {
+    zoom:1;
+    }
+    
+    /*limpa o float depois de um elemento.*/
+    .clearfix:after {
+        content: '.';
+        clear: both;
+        display: block;
+        height:0;
+        visibility:hidden;
+    }
+
+    .cidades{
+        font-size: 13px;
+    }
+ 
