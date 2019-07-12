@@ -64,7 +64,7 @@
 }
 
     
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 760px){
     section{
         padding: 30px 0;
     }
@@ -85,7 +85,39 @@
     }
 
     .main-nav{
+        margin-top: 30px;
+        
         display: none;
+    }
+    
+
+    .mobile-nav-icon{
+        font-size: 200%;
+        color: #fff;
+        display: inline-block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a :visited{
+        display: inline-block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .stick .main-nav{
+        margin-top: 10px;
+    }
+
+    
+    .stick .main-nav .mobile-nav-icon{
+        color: #555;
+    }
+
+    .stick .main-nav li a:link,
+    .main-nav li a :visited{
+        padding: 5px 0;
+       
     }
 
     h1{
@@ -101,7 +133,15 @@
         margin-right: 0%;
     }
 
+    .mobile-nav-icon{
+        font-size: 2000%;
+        color: #fff;
+       
+    }
 
+    .main-nav{
+        display: inline-block;
+    }
 
     .steps-box:first-child {
         text-align: center;

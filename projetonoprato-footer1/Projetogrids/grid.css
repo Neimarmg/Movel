@@ -1,0 +1,42 @@
+.grid-container{
+    /*essa em a propriedadede que transoforma em uma grid conteier automaticamem todos os elementos filhos desse conteiner 
+    serao grids filhos*/
+    display: grid;  
+    /*define funaçao repeat dis quantas colunas eu vou ter e o tannha ex 4, auto*/
+    grid-template-columns: repeat(4, auto);
+    /*grid-template-columns: 1fr 3fr 1fr 1fr;*/
+/*    grid-column-gap: 40px;
+    grid-row-gap: 50px;*/
+    /**espacamento entre linas e colunas*/
+    grid-gap: 30px 30px;
+    justify-content:center;
+
+    
+
+    background-color: brown;
+    padding: 10px;
+}
+
+.item{
+    background-color: azure;
+    border: 2px solid springgreen;
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.item1{
+    
+    /**defini a posição inicial e final do meu elemente "celula da nas colunas"*/
+    grid-column: 1 / 5;
+}
+
+.item5{
+    /**defini a posição inicial e final tamanha do meu elemente ""*/
+    grid-column: 1 / span 2;
+}
+
+.item10{
+    /**defini a posição inicial e final tamanha do meu elemente ""*/
+    grid-column: span 2;
+}

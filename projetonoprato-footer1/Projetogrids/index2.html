@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/Css">
+        .grid-container{
+            display: grid;
+            height: 100%;
+            grid-gap: 3px;
+            grid-auto-columns: repeat(2, 1fr);
+            grid-template-rows: 40px auto 40px;
+        
+            grid-template-areas: "h h h h h h h h h h h h"
+                        "m m m c c c c c c c c c c"
+                        "m m m f f f f f f f f f "
+
+        }
+    
+        .header{
+             grid-area: h;
+        }
+    
+        .footer{
+            grid-area: f;
+            border: 1px;
+        }
+
+        .content{
+            grid-area: c;
+            border: 1px;
+        }
+
+        
+        .nav{
+            grid-area: m;
+            border: 1px;
+        }
+    
+    </style>
+    <title>Css grid</title>
+</head>
+<body>
+
+    
+
+
+
+
+</body>
+</html>

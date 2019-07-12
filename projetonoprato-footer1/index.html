@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Importação do normalize css para arrumar bugs -->
+    <meta charset="utf-8">       
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Import do normalize css para arrumar bugs -->
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-    <!-- Importação do sistema de grid -->
+    <!-- Importaï¿½ï¿½o do sistema de grid -->
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-    <!-- Importação do nossa folha de estilo -->
+    <!-- Importaï¿½ï¿½o do nossa folha de estilo -->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <!-- Importação dos icones -->
+    <link rel="stylesheet" type="text/css" href="resources/css/midia.css">    
+    <!-- Importaï¿½ï¿½o dos icones -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-    <!-- Importação da fonte Lato -->
+    <!-- Importaï¿½ï¿½o da fonte Lato -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&amp;subset=latin-ext" rel="stylesheet">
-    <title>Saúde no Prato</title>
+    <meta name="viewport" content="width=width=device-width, initial-scale=1.0">
+
+
+    
+    <title>Saide no Prato</title>
+
+    <!-- https://realfavicongenerator.net/  para inserir o icone na pagina-->
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="stickty" class="js--section-furures"
             <div class="row">
-                <img src="resources/img/logo-white.png" alt="saúde no prato logo" class="logo">
-                <ul class="main-nav">
+                <img src="resources/img/logo-white.png" alt="saï¿½de no prato logo" class="logo">
+                <ul class="main-nav" js--main-nav>
                     <li><a href="#">Tele-entrega</a></li>
                     <li><a href="#">Funcionamento</a></li>
                     <li><a href="#">Cidades atendidas</a></li>
-                    <li><a href="#">Inscrever-se</a></li>
+                    <li><a href="#gallery">Inscrever-se</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon">
+                    <i class="fas fa-bars"></i>
+
+                </a>
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1>Adeus fast food do mal. <br> Olá comida saúdavel do bem.</h1>
-            <a class="btn btn-full" href="#">Comprar agora</a>
-            <a class="btn btn-ghost" href="#">Mais informações</a>
+            <h1>Adeus fast food do mal. <br> Olï¿½ comida saï¿½davel do bem.</h1>
+            <a class="btn btn-full"  #js--scroll-section-steps href="#">Comprar agora</a>
+            <a class="btn btn-ghost" #js--scroll-secton-cities href="#">Mais informaï¿½ï¿½es</a>
         </div>
     </header>
     <section class="section-features">
         <div class="row">
-            <h2>Solução rápida e saúdavel &mdash; não apenas rápida.</h2>
+            <h2>Soluï¿½ï¿½o rï¿½pida e saï¿½davel &mdash; nï¿½o apenas rï¿½pida.</h2>
             <p class="long-copy">
-                Nós da saúde no prato queremos prover a você uma experiência incrivelmente deliciosa e saudável. Pois entendemos que nem todo mundo tem tempo suficiente ou interesse em cozinhar, mas não é por isso que as pessoas devem deixar de se alimentar bem.
+                Nï¿½s da saï¿½de no prato queremos prover a vocï¿½ uma experiï¿½ncia incrivelmente deliciosa e saudï¿½vel. Pois entendemos que nem todo mundo tem tempo suficiente ou interesse em cozinhar, mas nï¿½o ï¿½ por isso que as pessoas devem deixar de se alimentar bem.
             </p>
         </div>
         <div class="row">
@@ -58,12 +76,12 @@
             </div>
             <div class="col span-1-of-4 box">
                 <ion-icon name="card"></ion-icon>
-                <h3>Aceitamos cartões</h3>
+                <h3>Aceitamos cartï¿½es</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. Vivamus tristique laoreet lorem, at maximus ante ultrices vel.</p>
             </div>
         </div>
     </section>
-    <section class="section-photos">
+    <section class="section-photos" id="gallery">
         <ul class="images-showcase clearfix">
             <li>
                 <figure class="photo">
@@ -110,25 +128,25 @@
         </ul>
     </section>
 
-    <!--Abrindo a seção steps (passos) -->
-    <section class="section-steps">
+    <!--Abrindo a seï¿½ï¿½o steps (passos) -->
+    <section class="section-steps" id="js--scroll-section-steps">
         <!--Abrindo a div com a classe ROW para criar um container centralizado,
-        será usando para colocar nosso título  -->
+        serï¿½ usando para colocar nosso tï¿½tulo  -->
         <div class="row">
-            <!--Título da seção -->
-            <h2>Esperando o quê? &mdash; Bastam 3 passos</h2>
+            <!--Tï¿½tulo da seï¿½ï¿½o -->
+            <h2>Esperando o quï¿½? &mdash; Bastam 3 passos</h2>
             <!--Fechando a div ROW -->
         </div>
-        <!--Fechando a seção steps (passos) -->
+        <!--Fechando a seï¿½ï¿½o steps (passos) -->
         <!-- Abrindo a div com a classe ROW para criar um container centralizado,
-            será usando para colocar 2 colunas  -->
+            serï¿½ usando para colocar 2 colunas  -->
         <div class="row">
-            <!-- Conteúdo da coluna da esquerda -->
+            <!-- Conteï¿½do da coluna da esquerda -->
             <div class="col span-1-of-2 steps-box">
                 <img src="resources/img/app-screen.png" alt="Seu pedido pelo iPhone" class="app-screen">
             </div>
 
-            <!-- Conteúdo da coluna da direita -->
+            <!-- Conteï¿½do da coluna da direita -->
             <div class="col span-1-of-2 steps-box">
                 <div class="step">
                     <div>1</div>
@@ -136,21 +154,21 @@
                 </div>
                 <div class="step">
                     <div>2</div>
-                    <p>Escolha uma refeição deliciosa e super saúdavel!</p>
+                    <p>Escolha uma refeiï¿½ï¿½o deliciosa e super saï¿½davel!</p>
                 </div>
                 <div class="step">
                     <div>3</div>
-                    <p>Aguarde apenas 15 minutos e receba a <br /> refeição escolhida na porta da sua casa!</p>
+                    <p>Aguarde apenas 15 minutos e receba a <br /> refeiï¿½ï¿½o escolhida na porta da sua casa!</p>
                 </div>
 
-                <a href="#" class="btn-app"><img src="resources/img/download-app-ios.svg" alt="Botão App Store"></a>
-                <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Botão Play Store"></a>
+                <a href="#" class="btn-app"><img src="resources/img/download-app-ios.svg" alt="Botï¿½o App Store"></a>
+                <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Botï¿½o Play Store"></a>
             </div>
         </div>
 
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="js--scroll-secton-cities">
         <div class="row">
             <h2>Estamos atendendo nas seguintes cidades</h2>
         </div>
@@ -164,7 +182,7 @@
                 </div>
                 <div class="city-feature">
                     <i class="fas fa-carrot icon-small"></i>
-                    20 opções de pratos
+                    20 opï¿½ï¿½es de pratos
                 </div>
                 <div class="city-feature">
                     <i class="fab fa-facebook icon-small"></i>
@@ -180,7 +198,7 @@
                 </div>
                 <div class="city-feature">
                     <i class="fas fa-carrot icon-small"></i>
-                    30 opções de pratos
+                    30 opï¿½ï¿½es de pratos
                 </div>
                 <div class="city-feature">
                     <i class="fab fa-instagram icon-small"></i>
@@ -196,7 +214,7 @@
                 </div>
                 <div class="city-feature">
                     <i class="fas fa-carrot icon-small"></i>
-                    25 opções de pratos
+                    25 opï¿½ï¿½es de pratos
                 </div>
                 <div class="city-feature">
                     <i class="fab fa-facebook icon-small"></i>
@@ -204,15 +222,15 @@
                 </div>
             </div>
             <div class="col span-1-of-4 box">
-                <img src="resources/img/sl.jpg" alt="São Leopoldo" />
-                <h3>São Leopoldo</h3>
+                <img src="resources/img/sl.jpg" alt="Sï¿½o Leopoldo" />
+                <h3>Sï¿½o Leopoldo</h3>
                 <div class="city-feature">
                     <i class="fas fa-street-view icon-small"></i>
                     Rua Das Flores, 666
                 </div>
                 <div class="city-feature">
                     <i class="fas fa-carrot icon-small"></i>
-                    10 opções de pratos
+                    10 opï¿½ï¿½es de pratos
                 </div>
                 <div class="city-feature">
                     <i class="fab fa-twitter icon-small"></i>
@@ -224,15 +242,15 @@
 
     <section class="section-testimonials">
         <div class="row">
-            <!-- Aqui irá o título da primeira div -->
+            <!-- Aqui irï¿½ o tï¿½tulo da primeira div -->
             <h2>Melhorando a qualidade de vida das pessoas</h2>
         </div>
         <div class="row">
-            <!-- Aqui irá o conteúdo da segunda div, organizado em 3 colunas -->
+            <!-- Aqui irï¿½ o conteï¿½do da segunda div, organizado em 3 colunas -->
             <div class="col span-1-of-3">
                 <!--Primeira coluna -->
                 <blockquote>
-                    Saúde no prato é incrível! Eu sou uma pessoa super ocupada, com pouco tempo para cuidar da minha alimentação, mas tudo mudou com a equipe da saúde no prato que assumiu essa função.
+                    Saï¿½de no prato ï¿½ incrï¿½vel! Eu sou uma pessoa super ocupada, com pouco tempo para cuidar da minha alimentaï¿½ï¿½o, mas tudo mudou com a equipe da saï¿½de no prato que assumiu essa funï¿½ï¿½o.
                     <cite>
                         <img src="resources/img/customer-1.jpg" />Alberto Saltonetto
                     </cite>
@@ -241,7 +259,7 @@
             <div class="col span-1-of-3">
                 <!--Segunda coluna -->
                 <blockquote>
-                    Comida saúdavel rapidinho na porta da sua casa! A melhor opção para mim e para vc... principalmente para mim que odeio cozinhar e que já perdi três casas após incendia-las tentando cozinhar.
+                    Comida saï¿½davel rapidinho na porta da sua casa! A melhor opï¿½ï¿½o para mim e para vc... principalmente para mim que odeio cozinhar e que jï¿½ perdi trï¿½s casas apï¿½s incendia-las tentando cozinhar.
                     <cite>
                         <img src="resources/img/customer-2.jpg" />Joicelaine Carneiro
                     </cite>
@@ -250,7 +268,7 @@
             <div class="col span-1-of-3">
                 <!--Terceira coluna -->
                 <blockquote>
-                    Eu estava procurando por uma alimentação saudável e que coubesse no meu bolso e encontrei... Saúde no Prato, melhor custo-benefício ever! Muito mais que alvace, eles tem rúcula e repolho também!
+                    Eu estava procurando por uma alimentaï¿½ï¿½o saudï¿½vel e que coubesse no meu bolso e encontrei... Saï¿½de no Prato, melhor custo-benefï¿½cio ever! Muito mais que alvace, eles tem rï¿½cula e repolho tambï¿½m!
                     <cite>
                         <img src="resources/img/customer-3.jpg" />Pedro Antunes
                     </cite>
@@ -259,22 +277,36 @@
         </div>
     </section>
     <footer>
-       
-		<div class="col span-1-of-2">
-			<ul class="social-links">
-				<li><a href="#"><ion-icon class="logo-instagram" name="logo-instagram"></ion-icon></a></li>
-				<li><a href="#"><ion-icon class="logo-facebook" name="logo-facebook"></ion-icon></a></li>
-				<li><a href="#"><ion-icon class="logo-googleplus" name="logo-googleplus"></ion-icon></a></li>
-				<li><a href="#"><ion-icon class="logo-twitter" name="logo-twitter"></ion-icon></a></li>
-			</ul>
-		</div>
-       
         <div class="row">
-            <p>Copyright &copy; 2019 Saúde no Prato. Todos os direitos reservados.</p>
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">Sobre Nï¿½s</a></li>
+                    <li><a href="#">Nosso Blog</a></li>
+                    <li><a href="#">Receitas</a></li>
+                    <li><a href="#">App iOS</a></li>
+                    <li><a href="#">App Android</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon class="logo-instagram" name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="logo-facebook" name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="logo-googleplus" name="logo-googleplus"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="logo-twitter" name="logo-twitter"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; 2019 Saï¿½de no Prato. Todos os direitos reservados.</p>
        </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/cross-domain/respond.proxy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr2@1.0.9/selectivizr2.min.js"></script>
+    
 </body>
+    <script src="/js/stikty"></script>
 </html>
 <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
 

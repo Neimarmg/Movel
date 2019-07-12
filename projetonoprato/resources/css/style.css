@@ -502,3 +502,8 @@ photo img {
         font-size: 13px;
     }
  
+    footer{
+        background-color: burlywood;
+        text-align: center;
+        font-size: 10px;
+    }
